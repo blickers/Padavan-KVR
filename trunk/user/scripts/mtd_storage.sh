@@ -3,7 +3,7 @@
 result=0
 mtd_part_name="Storage"
 mtd_part_dev="/dev/mtdblock5"
-#mtd_part_size=65536（默认值，16进制转换为10进制后为524288，即1024*1024*0.5，也就是0.5mb，这个值太小，在科学上网久了之后会被撑爆）
+#mtd_part_size=65536（默认值，太小，在科学上网久了之后会被撑爆）
 #将storage分区大小调整为5mb，解决运行时间久了之后storage空间被撑爆的问题（16进制转换为10进制后为5242880，即1024*1024*5，也就是5mb）
 #除此处外，还要修改trunk/configs/boards/（型号）/kernel-3.4.x.config中的CONFIG_MTD_STORE_PART_SIZ=0x500000（5242880转换为16进制进制后为0x500000）
 #需要注意实际闪存可被分配的空间够不够容纳调整后的storage分区，如果不够，会导致启动失败。根据自己的实际情况修改。
