@@ -624,99 +624,216 @@ if (found_app_smartdns() && found_app_adguardhome()) {
 	menuL2.push(mx);
 	tabMenuHash.put('16', mx2);
 }
-if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard()) {
+/* 1xxxx */
+if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard()) {
+/* x2xxx */
+if (!found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard()) {
+/* xx3xx */
+if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_zerotier.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_32_1#>", "link": "Advanced_zerotier.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard()) {
+/* xxx4x */
+if (!found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_wireguard.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_35_1#>", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-
-if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard()) {
+/* xxxx5 */
+if (!found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_frp.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_34_1#>", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 12xxx */
+if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-
-if (found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard()) {
+/* 1x3xx */
+if (found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard()) {
+/* 1xx4x */
+if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-
-if (!found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard()) {
+/* 1xxx5 */
+if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* x23xx */
+if (!found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard()) {
+/* x2x4x */
+if (!found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
-	var mx2 = [{ "title": "<#menu5_33_1#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
+	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && found_app_wireguard()) {
+/* x2xx5 */
+if (!found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* xx34x */
+if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_zerotier.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_32_1#>", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
+/* xx3x5 */
+if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_zerotier.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_32_1#>", "link": "Advanced_zerotier.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* xxx45 */
+if (!found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_wireguard.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_35_1#>", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
 
-if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard()) {
+/* 123xx */
+if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard()) {
+/* 12x4x */
+if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (!found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard()) {
+/* 12xx5 */
+if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 1x34x */
+if (found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 1x3x5 */
+if (found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 1xx45 */
+if (found_app_aliddns() && !found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* x234x */
+if (!found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard()) {
+/* x23x5 */
+if (!found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_ddnsto.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_32_2#>", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* xx345 */
+if (!found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_zerotier.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_32_1#>", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 1234x */
+if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
 	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
 	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
 	menuL2.push(mx);
 	tabMenuHash.put('17', mx2);
 }
-if (found_app_frp()) {
-	var mx = { "title": "<#menu5_25#>", "link": "Advanced_frp.asp", index: "18" };
-	var mx2 = [{ "title": "<#menu5_25_1#>", "link": "Advanced_frp.asp" }];
+/* 1x345 */
+if (found_app_aliddns() && !found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
 	menuL2.push(mx);
-	tabMenuHash.put('18', mx2);
+	tabMenuHash.put('17', mx2);
+}
+/* 12x45 */
+if (found_app_aliddns() && found_app_ddnsto() && !found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 123x5 */
+if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && !found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 1234x */
+if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && !found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
+}
+/* 12345 */
+if (found_app_aliddns() && found_app_ddnsto() && found_app_zerotier() && found_app_wireguard() && found_app_frp()) {
+	var mx = { "title": "<#menu5_30#>", "link": "Advanced_aliddns.asp", index: "17" };
+	var mx2 = [{ "title": "<#menu5_23_1#>", "link": "Advanced_aliddns.asp" }, { "title": "menu5_32_2", "link": "Advanced_ddnsto.asp" }, { "title": "menu5_32_1", "link": "Advanced_zerotier.asp" }, { "title": "menu5_35_1", "link": "Advanced_wireguard.asp" }, { "title": "menu5_34_1", "link": "Advanced_frp.asp" }];
+	menuL2.push(mx);
+	tabMenuHash.put('17', mx2);
 }
 if (found_app_caddy()) {
 	var mx = { "title": "<#menu5_27#>", "link": "Advanced_caddy.asp", index: "19" };
